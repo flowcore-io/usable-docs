@@ -4,8 +4,7 @@ import starlight from '@astrojs/starlight';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://flowcore-io.github.io',
-  // Uncomment and set if deploying to a repository path (e.g., /usable-docs)
-  // base: '/usable-docs',
+  base: '/usable-docs',
   integrations: [
     starlight({
       title: 'Usable Docs',

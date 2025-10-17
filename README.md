@@ -163,28 +163,48 @@ This project follows Orlando's design principles:
 
 ### Automatic Deployment (GitHub Actions)
 
-The site automatically deploys to GitHub Pages on every push to `main`:
+The site automatically deploys to GitHub Pages on every push to `main` using the
+**official Astro GitHub Action**:
 
-1. GitHub Actions runs the build
+1. GitHub Actions runs the build with `withastro/action@v3`
 2. Astro generates static files
 3. GitHub Pages publishes the site
-4. Available at `https://flowcore-io.github.io/usable-docs` (or your custom
-   domain)
+4. Available at `https://flowcore-io.github.io/usable-docs`
 
 ### Setup GitHub Pages
 
-1. Go to your repository Settings
-2. Navigate to Pages (under Code and automation)
-3. Set Source to "GitHub Actions"
+**One-time setup:**
+
+1. Go to your repository **Settings**
+2. Navigate to **Pages** (under Code and automation)
+3. Set **Source** to "**GitHub Actions**"
 4. Push to `main` branch to trigger deployment
+
+That's it! The workflow will automatically handle everything else.
 
 ### Custom Domain (Optional)
 
 To use a custom domain like `docs.usable.dev`:
 
-1. Add a `CNAME` file to the `public/` directory with your domain
-2. Configure DNS records at your domain provider
-3. Enable custom domain in GitHub Pages settings
+1. Update `astro.config.mjs`:
+
+   ```js
+   export default defineConfig({
+     site: "https://docs.usable.dev",
+     // Remove or comment out the base property
+   });
+   ```
+
+2. Add a `CNAME` file to the `public/` directory:
+
+   ```
+   docs.usable.dev
+   ```
+
+3. Configure DNS at your domain provider:
+   - Add a CNAME record pointing to `flowcore-io.github.io`
+
+4. Enable custom domain in GitHub Pages settings
 
 ## 🔧 Configuration
 
