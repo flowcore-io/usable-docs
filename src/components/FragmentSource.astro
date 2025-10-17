@@ -1,0 +1,54 @@
+---
+// Fragment Source component - links back to the original Usable fragment
+// Following Orlando's BEM methodology and accessibility standards
+
+interface Props {
+  fragmentId: string;
+  workspaceId: string;
+  fragmentType?: string;
+  updatedAt?: string;
+  className?: string;
+}
+
+const { 
+  fragmentId, 
+  workspaceId, 
+  fragmentType = 'Fragment',
+  updatedAt,
+  className = '' 
+} = Astro.props;
+
+// Construct the URL to the source fragment in Usable
+const sourceUrl = `https://usable.dev/dashboard/workspaces/${workspaceId}/fragments/${fragmentId}`;
+
+// Format the date if provided
+const formattedDate = updatedAt 
+  ? new Date(updatedAt).toLocaleDateString('en-US', { 
+      year: 'numeric', 
+      month: 'long', 
+      day: 'numeric' 
+    })
+  : null;
+---
+
+<aside class={`fragment-source ${className}`} role="complementary" aria-label="Source information">
+  <p class="fragment-source__text">
+    📝 This page was automatically generated from a <strong>{fragmentType}</strong> in Usable.
+    {formattedDate && <span> • Last updated: {formattedDate}</span>}
+    <br />
+    <a 
+      href={sourceUrl} 
+      class="fragment-source__link"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="View source fragment in Usable (opens in new tab)"
+    >
+      View source fragment →
+    </a>
+  </p>
+</aside>
+
+<style>
+  /* Fragment source styles are in custom.css following Orlando's theme system */
+</style>
+

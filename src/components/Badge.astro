@@ -1,0 +1,39 @@
+---
+// Badge component following Orlando's BEM methodology
+// Usage: <Badge type="new" />, <Badge type="updated" />, etc.
+
+interface Props {
+  type: 'new' | 'updated' | 'experimental' | 'deprecated';
+  className?: string;
+}
+
+const { type, className = '' } = Astro.props;
+
+const badgeText = {
+  new: 'NEW',
+  updated: 'UPDATED',
+  experimental: 'EXPERIMENTAL',
+  deprecated: 'DEPRECATED',
+};
+
+const ariaLabel = {
+  new: 'Recently added content',
+  updated: 'Recently updated content',
+  experimental: 'Experimental feature - may change',
+  deprecated: 'Deprecated - will be removed in future',
+};
+---
+
+<span
+  class={`usable-badge usable-badge--${type} ${className}`}
+  role="status"
+  aria-label={ariaLabel[type]}
+>
+  {badgeText[type]}
+</span>
+
+<style>
+  /* Badge styles are in custom.css following Orlando's theme system */
+  /* This keeps component markup clean and maintains separation of concerns */
+</style>
+

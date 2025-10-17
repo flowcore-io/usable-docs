@@ -1,0 +1,11 @@
+# Usable Docs - robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://docs.usable.dev/sitemap-index.xml
+
+# Crawl-delay for polite bots
+Crawl-delay: 1
+

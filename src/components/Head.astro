@@ -1,0 +1,52 @@
+---
+// Custom Head component to inject metadata and badges functionality
+// Following Orlando's standards: Accessibility-first, performance-conscious
+
+import type { Props } from '@astrojs/starlight/props';
+
+// Get the default Head component
+const StarlightHead = await Astro.slots.render('default');
+---
+
+<!-- Default Starlight head content -->
+<Fragment set:html={StarlightHead} />
+
+<!-- Custom meta tags for SEO -->
+<meta name="author" content="Usable Team" />
+<meta name="generator" content="Astro + Starlight" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Usable Docs" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<!-- Preload critical fonts for performance (Orlando standard) -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+<!-- Accessibility: Skip link styles -->
+<style>
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--sl-color-bg);
+    color: var(--sl-color-text);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    z-index: 100;
+    font-weight: 600;
+  }
+  
+  .skip-link:focus {
+    top: 0;
+    outline: 2px solid var(--usable-focus-color, #ff44aa);
+    outline-offset: 2px;
+  }
+</style>
+
+<!-- Performance: Reduce unused CSS -->
+<link rel="preload" as="style" href="/src/styles/custom.css" />
+
+<!-- Analytics placeholder (privacy-conscious) -->
+<!-- Add Plausible or similar privacy-friendly analytics here -->
+

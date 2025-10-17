@@ -1,0 +1,270 @@
+/* Orlando-inspired custom styles for Usable Docs */
+/* Following Orlando's principles: Accessibility-first, Theme-based, BEM methodology */
+
+:root {
+  /* ===== Usable Official Brand Colors ===== */
+  /* Source: usable.dev design system */
+  
+  /* Primary Brand Colors */
+  --usable-brand-primary: #8b5cf6;      /* Primary Purple (Violet-500) */
+  --usable-brand-secondary: #a855f7;    /* Secondary Purple */
+  --usable-brand-accent: #ec4899;       /* Pink accent */
+  
+  /* Semantic Colors */
+  --usable-success: #10b981;            /* Success Green (Emerald-500) */
+  --usable-error: #ef4444;              /* Error Red (Red-500) */
+  --usable-warning: #f59e0b;            /* Warning Orange (Amber-500) */
+  --usable-info: #3b82f6;               /* Info Blue (Blue-500) */
+  
+  /* Text Colors */
+  --usable-text-primary: #ffffff;       /* Primary Text (White) */
+  --usable-text-secondary: #9ca3af;     /* Secondary Text (Gray-400) */
+  --usable-text-muted: #6b7280;         /* Muted Text (Gray-500) */
+  
+  /* Focus styles for accessibility (Orlando standard) */
+  --usable-focus-color: #8b5cf6;        /* Use primary purple for focus */
+  --usable-focus-outline: 2px solid var(--usable-focus-color);
+  --usable-focus-outline-offset: 2px;
+  
+  /* Spacing system (Orlando standard) */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  
+  /* Border radius */
+  --border-radius-sm: 0.25rem;
+  --border-radius-md: 0.5rem;
+  --border-radius-lg: 0.75rem;
+}
+
+/* ===== Orlando Accessibility: Enhanced Focus Styles ===== */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+  outline: var(--usable-focus-outline);
+  outline-offset: var(--usable-focus-outline-offset);
+  border-radius: var(--border-radius-sm);
+}
+
+/* ===== Badge Component (BEM) ===== */
+.usable-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: var(--border-radius-md);
+  border: 1px solid;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.usable-badge--new {
+  background-color: rgba(16, 185, 129, 0.1);  /* Success green with transparency */
+  color: #10b981;
+  border-color: #10b981;
+}
+
+.usable-badge--updated {
+  background-color: rgba(139, 92, 246, 0.1);  /* Primary purple with transparency */
+  color: #8b5cf6;
+  border-color: #8b5cf6;
+}
+
+.usable-badge--experimental {
+  background-color: rgba(245, 158, 11, 0.1);  /* Warning orange with transparency */
+  color: #f59e0b;
+  border-color: #f59e0b;
+}
+
+.usable-badge--deprecated {
+  background-color: rgba(239, 68, 68, 0.1);   /* Error red with transparency */
+  color: #ef4444;
+  border-color: #ef4444;
+}
+
+/* Dark theme badge adjustments - brighter colors for dark backgrounds */
+[data-theme='dark'] .usable-badge--new {
+  background-color: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border-color: #10b981;
+}
+
+[data-theme='dark'] .usable-badge--updated {
+  background-color: rgba(139, 92, 246, 0.15);
+  color: #a78bfa;
+  border-color: #8b5cf6;
+}
+
+[data-theme='dark'] .usable-badge--experimental {
+  background-color: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+  border-color: #f59e0b;
+}
+
+[data-theme='dark'] .usable-badge--deprecated {
+  background-color: rgba(239, 68, 68, 0.15);
+  color: #f87171;
+  border-color: #ef4444;
+}
+
+/* ===== Fragment Source Component (BEM) ===== */
+.fragment-source {
+  margin-top: var(--spacing-xl);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--sl-color-gray-5);
+  background-color: var(--sl-color-gray-6);
+}
+
+.fragment-source__text {
+  font-size: 0.875rem;
+  color: var(--sl-color-gray-2);
+  margin: 0;
+}
+
+.fragment-source__link {
+  color: var(--usable-brand-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.fragment-source__link:hover {
+  color: var(--usable-brand-secondary);
+  text-decoration: underline;
+}
+
+/* ===== Badge Container ===== */
+.badges-container {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+  flex-wrap: wrap;
+}
+
+/* ===== Custom Starlight Overrides ===== */
+/* Enhance Starlight with Orlando's accessibility standards */
+
+/* Enhanced skip link (Orlando standard) */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--sl-color-bg);
+  color: var(--sl-color-text);
+  padding: var(--spacing-sm) var(--spacing-md);
+  text-decoration: none;
+  border-radius: var(--border-radius-sm);
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: var(--usable-focus-outline);
+}
+
+/* Respect reduced motion preferences (Orlando standard) */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ===== Code Block Enhancements ===== */
+.expressive-code {
+  margin: var(--spacing-lg) 0;
+  border-radius: var(--border-radius-md);
+}
+
+/* ===== Button Overrides (Usable Brand) ===== */
+/* Override Starlight's default blue buttons with Usable purple */
+.sl-link-button[data-variant="primary"],
+.action.primary > a {
+  background-color: var(--usable-brand-primary) !important;
+  border-color: var(--usable-brand-primary) !important;
+  color: white !important;
+}
+
+.sl-link-button[data-variant="primary"]:hover,
+.action.primary > a:hover {
+  background-color: var(--usable-brand-secondary) !important;
+  border-color: var(--usable-brand-secondary) !important;
+}
+
+.sl-link-button[data-variant="secondary"],
+.action.secondary > a {
+  border-color: var(--usable-brand-primary) !important;
+  color: var(--usable-brand-primary) !important;
+}
+
+.sl-link-button[data-variant="secondary"]:hover,
+.action.secondary > a:hover {
+  background-color: rgba(139, 92, 246, 0.1) !important;
+  border-color: var(--usable-brand-secondary) !important;
+  color: var(--usable-brand-secondary) !important;
+}
+
+/* Hero buttons */
+.hero .actions a {
+  border-radius: var(--border-radius-md);
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+/* ===== Custom Callouts ===== */
+.starlight-aside {
+  border-radius: var(--border-radius-md);
+  border-left: 4px solid var(--usable-brand-primary);
+}
+
+.starlight-aside--note {
+  border-left-color: var(--usable-info);
+}
+
+.starlight-aside--tip {
+  border-left-color: var(--usable-success);
+}
+
+.starlight-aside--caution {
+  border-left-color: var(--usable-warning);
+}
+
+.starlight-aside--danger {
+  border-left-color: var(--usable-error);
+}
+
+/* ===== Mobile Responsive (Orlando mobile-first) ===== */
+@media (max-width: 768px) {
+  .fragment-source {
+    padding: var(--spacing-md);
+  }
+  
+  .badges-container {
+    gap: var(--spacing-xs);
+  }
+}
+
+/* ===== Print Styles (Orlando accessibility) ===== */
+@media print {
+  .usable-badge {
+    border: 1px solid #000;
+    color: #000;
+    background: #fff;
+  }
+  
+  .fragment-source__link {
+    text-decoration: underline;
+  }
+}
+
