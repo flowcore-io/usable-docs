@@ -77,6 +77,9 @@ The site will be available at `http://localhost:4321`
 | `npm run dev`     | Start dev server at `localhost:4321` |
 | `npm run build`   | Build production site to `./dist/`   |
 | `npm run preview` | Preview production build locally     |
+| `npm run format`  | Format code with Biome               |
+| `npm run lint`    | Lint code with Biome                 |
+| `npm run check`   | Check formatting and linting         |
 | `npm run astro`   | Run Astro CLI commands               |
 
 ## 📝 Creating Content
@@ -160,29 +163,28 @@ This project follows Orlando's design principles:
 
 ### Automatic Deployment (GitHub Actions)
 
-The site automatically deploys to Cloudflare Pages on every push to `main`:
+The site automatically deploys to GitHub Pages on every push to `main`:
 
 1. GitHub Actions runs the build
 2. Astro generates static files
-3. Cloudflare Pages deploys the site
-4. Available at `https://docs.usable.dev`
+3. GitHub Pages publishes the site
+4. Available at `https://flowcore-io.github.io/usable-docs` (or your custom
+   domain)
 
-### Manual Deployment
+### Setup GitHub Pages
 
-```bash
-# Build the site
-npm run build
+1. Go to your repository Settings
+2. Navigate to Pages (under Code and automation)
+3. Set Source to "GitHub Actions"
+4. Push to `main` branch to trigger deployment
 
-# Deploy to Cloudflare Pages
-npx wrangler pages deploy dist --project-name=usable-docs
-```
+### Custom Domain (Optional)
 
-### Environment Variables
+To use a custom domain like `docs.usable.dev`:
 
-Required secrets in GitHub:
-
-- `CLOUDFLARE_API_TOKEN` - Cloudflare API token with Pages permissions
-- `CLOUDFLARE_ACCOUNT_ID` - Your Cloudflare account ID
+1. Add a `CNAME` file to the `public/` directory with your domain
+2. Configure DNS records at your domain provider
+3. Enable custom domain in GitHub Pages settings
 
 ## 🔧 Configuration
 
