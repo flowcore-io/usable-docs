@@ -21,24 +21,20 @@ export default defineConfig({
       },
       sidebar: [
         {
-          label: 'Getting Started',
-          autogenerate: { directory: 'getting-started' },
+          label: 'Knowledge',
+          autogenerate: { directory: 'knowledge' },
         },
         {
-          label: 'Guides',
-          autogenerate: { directory: 'guides' },
+          label: 'Recipe',
+          autogenerate: { directory: 'recipe' },
         },
         {
-          label: 'Tutorials',
-          autogenerate: { directory: 'tutorials' },
+          label: 'Solution',
+          autogenerate: { directory: 'solution' },
         },
         {
-          label: 'Troubleshooting',
-          autogenerate: { directory: 'troubleshooting' },
-        },
-        {
-          label: 'Reference',
-          autogenerate: { directory: 'reference' },
+          label: 'Template',
+          autogenerate: { directory: 'template' },
         },
       ],
       customCss: [
