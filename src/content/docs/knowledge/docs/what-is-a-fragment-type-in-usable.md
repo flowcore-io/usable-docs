@@ -1,11 +1,11 @@
 ---
 title: "What is a Fragment Type in Usable"
-description: "Definition of a fragment type, its purpose, and an overview of the built‑in types (Knowledge, Recipe, Solution, Template, Instruction Set)."
+description: "Definition of a fragment type, its purpose, and an overview of the built-in types (Knowledge, Recipe, Solution, Template, Instruction Set)."
 fragmentId: "183f3d36-6eb6-465b-9af3-aefd836c4b80"
 fragmentType: "Knowledge"
 createdBy: "unknown"
-createdAt: "2025-10-22T12:58:52.447Z"
-updatedAt: "2025-10-22T12:58:52.042Z"
+createdAt: "2025-10-22T13:27:10.446Z"
+updatedAt: "2025-10-22T13:27:10.132Z"
 badges: []
 ---
 
