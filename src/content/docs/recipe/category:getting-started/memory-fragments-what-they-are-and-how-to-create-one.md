@@ -1,11 +1,11 @@
 ---
 title: "Memory Fragments: What They Are and How to Create One"
-description: "Beginner guide to memory fragments and creating your first fragment with AI-generated summary and tags. Updated for 2025."
+description: "Beginner guide to memory fragments and creating your first fragment with AI-generated summary and tags. Updated 2025."
 fragmentId: "5253f72e-5909-4eab-be04-ff25fd9e3219"
 fragmentType: "Recipe"
 createdBy: "unknown"
-createdAt: "2025-10-22T13:08:28.977Z"
-updatedAt: "2025-10-22T13:08:28.469Z"
+createdAt: "2025-10-22T13:27:07.157Z"
+updatedAt: "2025-10-22T13:27:06.639Z"
 badges: []
 ---
 
