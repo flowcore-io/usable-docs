@@ -1,11 +1,11 @@
 ---
 title: "Usable Live Sessions - Complete Documentation and Session Archive"
-description: "Comprehensive documentation of Usable Live YouTube sessions from October 2025, covering CRM, time tracking, ticket processing, chatbot demos, Discord bot integration, n8n webhooks, and AI-generated documentation - demonstrating real-world Usable workflows and integrations."
+description: "Comprehensive documentation of Usable Live YouTube sessions from October 2025, covering CRM, time tracking, ticket processing, chatbot demos, Discord bot integration, n8n webhooks, and AI-generated documentation."
 fragmentId: "1c39d87e-7843-4c92-932e-6b74c8930283"
 fragmentType: "Recipe"
 createdBy: "unknown"
-createdAt: "2025-10-22T13:03:31.087Z"
-updatedAt: "2025-10-22T13:03:30.740Z"
+createdAt: "2025-10-22T13:27:13.196Z"
+updatedAt: "2025-10-22T13:27:12.865Z"
 badges: []
 ---
 
