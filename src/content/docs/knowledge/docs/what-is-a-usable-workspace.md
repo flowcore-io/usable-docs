@@ -1,11 +1,11 @@
 ---
 title: "What is a Usable Workspace"
-description: "Definition and key characteristics of a Usable Workspace, including purpose, contents, access, and how it supports collaborative knowledge capture."
+description: "Definition and key characteristics of a Usable Workspace, including purpose, contents, access, and how it supports collaborative knowledge capture. (Test update to verify n8n workflow fix)"
 fragmentId: "41f6445b-b549-4938-8d60-4c8c9125934e"
 fragmentType: "Knowledge"
 createdBy: "unknown"
-createdAt: "2025-10-22T12:58:53.219Z"
-updatedAt: "2025-10-22T12:58:52.882Z"
+createdAt: "2025-10-22T13:20:31.883Z"
+updatedAt: "2025-10-22T13:20:31.464Z"
 badges: []
 ---
 
