@@ -1,11 +1,11 @@
 ---
 title: "Usable Docs Auto-Migration Template - Fragment Type to Docs Path Mapping"
-description: "Deterministic template for auto-migrating Usable fragments to docs site. Maps fragment types to categories, uses first tag + title for path. Simple JS parsing, no LLM required. Updated workflow."
+description: "Deterministic template for auto-migrating Usable fragments to docs site. Maps fragment types to categories, uses first tag + title for path. Simple JS parsing, no LLM required."
 fragmentId: "c4fe3e5a-0329-4c77-995c-5cccca9fa406"
 fragmentType: "Template"
 createdBy: "unknown"
-createdAt: "2025-10-22T13:03:32.404Z"
-updatedAt: "2025-10-22T13:03:32.035Z"
+createdAt: "2025-10-22T13:27:12.415Z"
+updatedAt: "2025-10-22T13:27:12.103Z"
 badges: []
 ---
 
