@@ -4,8 +4,8 @@ description: "How to turn livestream transcripts into public documentation using
 fragmentId: "ec40ee5d-1e24-472c-8ea2-b105fc1bb60b"
 fragmentType: "Knowledge"
 createdBy: "unknown"
-createdAt: "2025-10-22T13:49:18.072Z"
-updatedAt: "2025-10-22T13:49:17.686Z"
+createdAt: "2025-10-22T14:36:10.375Z"
+updatedAt: "2025-10-22T14:36:09.953Z"
 badges: []
 ---
 
