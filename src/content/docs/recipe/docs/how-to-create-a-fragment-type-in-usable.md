@@ -1,11 +1,11 @@
 ---
 title: "How to Create a Fragment Type in Usable"
-description: "Step‑by‑step guide to creating a custom fragment type in a Usable workspace, with UI navigation, metadata, and validation steps."
+description: "Step-by-step guide to creating a custom fragment type in a Usable workspace, with UI navigation, metadata, and validation steps."
 fragmentId: "30a33097-08ad-4208-a21b-8cf921a1674c"
 fragmentType: "Recipe"
 createdBy: "unknown"
-createdAt: "2025-10-22T13:02:35.914Z"
-updatedAt: "2025-10-22T13:02:35.420Z"
+createdAt: "2025-10-22T13:27:11.466Z"
+updatedAt: "2025-10-22T13:27:11.157Z"
 badges: []
 ---
 
