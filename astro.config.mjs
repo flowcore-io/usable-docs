@@ -3,7 +3,7 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://flowcore-io.github.io',
+  site: 'https://docs.usable.dev',
   base: '/usable-docs',
   integrations: [
     starlight({
