@@ -1,26 +1,13 @@
 ---
 title: "Fragment Types: Defaults, Custom Types, and How AI Uses Descriptions"
-description: "Reference for default fragment types, custom types (e.g., Issues), and how AI uses type descriptions to classify content. Updated for October 2025."
+description: "Reference for default fragment types, custom types (e.g., Issues), and how AI uses type descriptions to classify content. Updated October 2025."
 fragmentId: "d6794218-d481-49b7-8d61-ad4bedd22c69"
 fragmentType: "Knowledge"
 createdBy: "unknown"
-createdAt: "2025-10-22T12:59:11.451Z"
-updatedAt: "2025-10-22T12:59:10.951Z"
+createdAt: "2025-10-22T13:27:09.731Z"
+updatedAt: "2025-10-22T13:27:09.394Z"
 badges: []
 ---
-
----
-title: "Fragment Types: Defaults, Custom Types, and How AI Uses Descriptions"
-category: getting-started
-subcategory: 
-tags: [fragment-types, issues, classification, instruction-set, usable-101]
-difficulty: beginner
-version: 1.0.0
-last_updated: 2025-10-21
-author: Ólavur Ellefsen
----
-
-# Fragment Types: Defaults, Custom Types, and How AI Uses Descriptions
 
 > Category: Getting Started | Difficulty: Beginner | Last Updated: 2025-10-21
 
