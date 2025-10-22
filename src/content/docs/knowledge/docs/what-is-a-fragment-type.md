@@ -1,11 +1,11 @@
 ---
 title: "What is a Fragment Type"
-description: "Comprehensive documentation explaining fragment types in Usable: their purpose, the five standard types (Knowledge, Recipe, Solution, Template, Instruction Set), when to use each, custom types, and decision frameworks for choosing the right type."
+description: "Comprehensive documentation explaining fragment types in Usable: their purpose, the five standard types, when to use each, custom types, and decision frameworks for choosing the right type."
 fragmentId: "a5409f44-97f1-43e1-87ba-ec62ae670fdf"
 fragmentType: "Knowledge"
 createdBy: "unknown"
-createdAt: "2025-10-22T12:58:51.527Z"
-updatedAt: "2025-10-22T12:58:51.089Z"
+createdAt: "2025-10-22T13:27:08.950Z"
+updatedAt: "2025-10-22T13:27:08.540Z"
 badges: []
 ---
 
