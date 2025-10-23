@@ -4,10 +4,13 @@ description: "Comprehensive documentation explaining fragment types: purpose, st
 fragmentId: "a5409f44-97f1-43e1-87ba-ec62ae670fdf"
 fragmentType: "Knowledge"
 createdBy: "unknown"
-createdAt: "2025-10-22T13:48:56.648Z"
-updatedAt: "2025-10-22T13:48:56.266Z"
+createdAt: "2025-10-23T15:26:24.475Z"
+updatedAt: "2025-10-23T15:26:23.666Z"
 badges: []
 ---
+
+> Update: Sourced from Usable Live (2025-10-23) — Fragment Types session. See summary and full transcript linked at the end.
+# What is a Fragment Type
 
 A **Fragment Type** is a classification system that helps organize and categorize knowledge fragments within Usable workspaces. Fragment types provide semantic meaning to your content, making it easier to find, filter, and understand the purpose of each piece of information.
 
@@ -217,3 +220,11 @@ This demonstrates how **fragment types scale** from personal knowledge managemen
 ---
 
 **Sources**: Compiled from Usable Live sessions (Oct 2025), particularly the "Docs From Context" session and Week 41 Clarity case study.
+
+---
+### Updated from Usable Live (2025-10-23)
+This page was updated based on the Usable Live session focused on the five default fragment types and how we use them in practice, including auto-generating docs for the Astro JS site.
+
+- Summary: “Usable Live - 2025-10-23: Granola Summary - Fragment Types”
+- Full transcript: “Usable Live - 2025-10-23: Transcript (Fragment Types)”
+- Key additions: clarified purpose of defaults, human vs LLM focus (Recipe vs Instruction Set), examples of custom types (e.g., Gmail in CRM).
